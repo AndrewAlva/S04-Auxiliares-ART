@@ -54,6 +54,73 @@ body {
   margin: 0;
 }
 
+.example-page {
+  width: min(1126px, calc(100% - 40px));
+  min-height: 100svh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 28px 0 40px;
+}
+
+.back-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.example-header {
+  max-width: 680px;
+  padding: 12vh 0 28px;
+}
+
+.example-header h1 {
+  margin: 8px 0 12px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.scene {
+  width: 100%;
+  min-height: 52vh;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: radial-gradient(circle at 50% 35%, #29233f, #11121a 72%);
+  box-shadow: var(--shadow);
+  cursor: crosshair;
+}
+
+.scene canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .example-page {
+    width: min(100% - 28px, 1126px);
+    padding-top: 18px;
+  }
+
+  .example-header {
+    padding-top: 8vh;
+  }
+
+  .scene {
+    min-height: 55vh;
+  }
+}
+
 h1,
 h2 {
   font-family: var(--heading);
@@ -298,4 +365,8 @@ code {
 
 #content {
   text-align: center;
+}
+
+.examples-list {
+  text-align: left;
 }
