@@ -106,6 +106,29 @@ body {
   height: 100%;
 }
 
+.fullscreen-example {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.scene-fullscreen {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.fullscreen-back-link {
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  left: 24px;
+}
+
 @media (max-width: 600px) {
   .example-page {
     width: min(100% - 28px, 1126px);
